@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/one"
+    tools:context=".StartActivity">
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80sp"
+        android:text="COUNSELLING ANONYMOUS "
+        android:textColor="@color/sea_foam"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="111dp"
+        android:text="Whispers in the silence, where shadows play,words unspoken, find their way. Conversations with the moon, so bright,revealing secrets, hidden from the light. In the stillness, hearts dare to roam, drifting thoughts, finding their way home.
+        -Novel Crescendo."
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/to_login"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="400sp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="toLoginPage"
+        android:text="Log In"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/to_registration"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/to_login"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="30sp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="toRegistrationPage"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>

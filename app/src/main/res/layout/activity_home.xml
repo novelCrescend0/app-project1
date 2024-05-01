@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b2"
+    tools:context=".HomeActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Choose the problems you would like to get assisted with:"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/wave"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20sp"
+        android:id="@+id/choose_label"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginVertical="30sp"
+        android:background="@drawable/rounded_corner"
+        android:choiceMode="multipleChoice"
+        android:id="@+id/list_data"
+        android:layout_below="@+id/choose_label"/>
+
+</RelativeLayout>
