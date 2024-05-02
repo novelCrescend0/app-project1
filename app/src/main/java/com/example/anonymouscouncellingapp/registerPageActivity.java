@@ -22,7 +22,7 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-public class RegisterActivity extends AppCompatActivity {
+public class registerPageActivity extends AppCompatActivity {
     EditText username, mail, pass;
     OkHttpClient client;
     RadioButton r1, r2;
@@ -75,7 +75,7 @@ public class RegisterActivity extends AppCompatActivity {
                             assert response.body() != null;
                             String responseBody = response.body().string();
 
-                            Toast.makeText(RegisterActivity.this, responseBody, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(registerPageActivity.this, responseBody, Toast.LENGTH_SHORT).show();
                         } catch (IOException e) {
                             throw new RuntimeException(e);
                         }
@@ -90,6 +90,6 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     public void toLoginScreen(View view) {
-        startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+        startActivity(new Intent(registerPageActivity.this, loginPageActivity.class));
     }
 }

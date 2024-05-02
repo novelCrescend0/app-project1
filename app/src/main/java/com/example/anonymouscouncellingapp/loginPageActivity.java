@@ -9,7 +9,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -23,7 +22,7 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 
-public class LoginActivity extends AppCompatActivity {
+public class loginPageActivity extends AppCompatActivity {
     private OkHttpClient client;
     private EditText username, password;
 
@@ -40,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void toRegistration(View view) {
-        startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+        startActivity(new Intent(loginPageActivity.this, registerPageActivity.class));
         finish();
     }
 
@@ -70,8 +69,8 @@ public class LoginActivity extends AppCompatActivity {
                     runOnUiThread(() -> {
                         try {
                             assert response.body() != null;
-                            Toast.makeText(LoginActivity.this, response.body().string(), Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+                            Toast.makeText(loginPageActivity.this, response.body().string(), Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(loginPageActivity.this, HomeActivity.class));
                             finish();
                         } catch (IOException e) {
                             throw new RuntimeException(e);

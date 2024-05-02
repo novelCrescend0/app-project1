@@ -21,13 +21,13 @@
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".registerPageActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".loginPageActivity"
             android:exported="false" />
         <activity
-            android:name=".StartActivity"
+            android:name=".startPageActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
