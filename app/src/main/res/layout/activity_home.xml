@@ -7,43 +7,26 @@
     android:background="@color/soothing_lavender"
     tools:context=".HomeActivity">
 
-
-    <LinearLayout
+    <SearchView
+        android:id="@+id/search_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search problems"
+       />
 
-        <TextView
-            android:id="@+id/choose_label"
-            android:layout_width="match_parent"
-            android:layout_height="50sp"
-            android:layout_marginHorizontal="20sp"
-            android:layout_marginTop="20sp"
-            android:text="What would you like to be assited with?"
-            android:textColor="@color/wave"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+    <ListView
+        android:id="@+id/list_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginVertical="30sp"
+        android:background="@drawable/rounded_corner"
+        android:choiceMode="multipleChoice"
+        android:layout_below="@+id/search_view"/>
 
-        <SearchView
-            android:id="@+id/search_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginTop="20dp"
-            android:iconifiedByDefault="false"
-            android:queryHint="Search problems">
-
-        </SearchView>
-
-        <ListView
-            android:id="@+id/list_data"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="50sp"
-            android:layout_marginVertical="30sp"
-            android:background="@drawable/rounded_corner"
-            android:choiceMode="multipleChoice" />
-    </LinearLayout>
 
 
 </RelativeLayout>
