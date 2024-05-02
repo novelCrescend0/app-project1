@@ -54,7 +54,7 @@ public class loginPageActivity extends AppCompatActivity {
                     .build();
 
             Request request = new Request.Builder()
-                    .url(LOGIN_PHP)
+                    .url("https://lamp.ms.wits.ac.za/home/s2694546/users.php")
                     .post(requestBody)
                     .build();
 
