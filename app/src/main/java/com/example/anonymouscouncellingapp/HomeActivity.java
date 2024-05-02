@@ -89,7 +89,7 @@ public class HomeActivity extends AppCompatActivity {
         OkHttpClient client = new OkHttpClient();
 
         Request request = new Request.Builder()
-                .url(Links.LOGIN_PHP) // Replace "Your_API_URL_here" with the actual URL to fetch problems
+                .url("https://lamp.ms.wits.ac.za/home/s2694546/problems.php") // Replace "Your_API_URL_here" with the actual URL to fetch problems
                 .build();
 
         client.newCall(request).enqueue(new Callback() {
