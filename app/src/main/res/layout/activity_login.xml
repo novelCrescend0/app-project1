@@ -23,6 +23,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginVertical="50sp"
             android:text="Login"
+            android:onClick="loginUser"
             android:textColor="@color/ocean"
             android:textSize="50sp"
             android:textStyle="bold" />
@@ -111,8 +112,8 @@
             android:layout_marginHorizontal="25sp"
             android:layout_marginTop="30sp"
             android:backgroundTint="@android:color/transparent"
-            android:onClick="loginUser"
             android:text="Sign in"
+            android:onClick="loginUser"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />

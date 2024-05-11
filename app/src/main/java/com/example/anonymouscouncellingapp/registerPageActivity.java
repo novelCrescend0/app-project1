@@ -1,7 +1,5 @@
 package com.example.anonymouscouncellingapp;
 
-import static com.example.anonymouscouncellingapp.links.Links.REGISTER_PHP;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +9,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.anonymouscouncellingapp.links.Links;
 
 import java.io.IOException;
 
@@ -58,7 +58,7 @@ public class registerPageActivity extends AppCompatActivity {
                     .build();
 
             Request request = new Request.Builder()
-                    .url(REGISTER_PHP)
+                    .url(Links.reg)
                     .post(requestBody)
                     .build();
 
